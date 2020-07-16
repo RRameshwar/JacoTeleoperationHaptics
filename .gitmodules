@@ -1,0 +1,18 @@
+[submodule "joint-control-pkgs"]
+	path = joint-control-pkgs
+	url = https://github.com/JenniferBuehler/joint-control-pkgs.git
+[submodule "graspit-pkgs"]
+	path = graspit-pkgs
+	url = https://github.com/JenniferBuehler/graspit-pkgs
+[submodule "moveit-pkgs"]
+	path = moveit-pkgs
+	url = https://github.com/JenniferBuehler/moveit-pkgs
+[submodule "grasp-execution-pkgs"]
+	path = grasp-execution-pkgs
+	url = https://github.com/RRameshwar/grasp-execution-pkgs
+[submodule "gazebo-pkgs"]
+	path = gazebo-pkgs
+	url = https://github.com/JenniferBuehler/gazebo-pkgs
+[submodule "jaco-arm-pkgs"]
+	path = jaco-arm-pkgs
+	url = https://github.com/RRameshwar/jaco-arm-pkgs
