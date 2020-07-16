@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: jaco_description
+Description: Description of jaco_description
+Version: 0.0.0
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/jaco-arm-pkgs/jaco_arm/jaco_description/urdf
+Libs: -L${prefix}/lib 
+Requires: xacro gazebo_ros

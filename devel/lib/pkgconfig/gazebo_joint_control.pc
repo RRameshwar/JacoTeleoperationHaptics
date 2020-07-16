@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: gazebo_joint_control
+Description: Description of gazebo_joint_control
+Version: 0.0.0
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/joint-control-pkgs/gazebo_joint_control/include -I/home/rrameshwar/JacoTeleoperationHaptics/src/joint-control-pkgs/gazebo_joint_control/gz2_support -I/usr/include
+Libs: -L${prefix}/lib -lgazebo_joint_control /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: gazebo_ros roscpp sensor_msgs

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11  -shared -Wl,-soname,libthumb_contact.so -o /home/rrameshwar/JacoTeleoperationHaptics/devel/lib/libthumb_contact.so CMakeFiles/thumb_contact.dir/ThumbContactPlugin.cc.o  -L/usr/lib/x86_64-linux-gnu/gazebo-9/plugins 
