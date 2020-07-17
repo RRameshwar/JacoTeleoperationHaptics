@@ -19,3 +19,9 @@
 [submodule "src/convenience-pkgs"]
 	path = src/convenience-pkgs
 	url = https://github.com/JenniferBuehler/convenience-pkgs
+[submodule "src/jaco-arm-pkgs"]
+	path = src/jaco-arm-pkgs
+	url = https://github.com/RRameshwar/jaco-arm-pkgs
+[submodule "src/joint-control-pkgs"]
+	path = src/joint-control-pkgs
+	url = https://github.com/JenniferBuehler/joint-control-pkgs
