@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: urdf_transform
+Description: Description of urdf_transform
+Version: 1.0.2
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/urdf-tools-pkgs/urdf_transform/include
+Libs: -L${prefix}/lib -lurdf_transform
+Requires: roscpp urdf_traverser baselib_binding

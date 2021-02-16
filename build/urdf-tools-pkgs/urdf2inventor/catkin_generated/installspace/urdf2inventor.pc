@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/install
+
+Name: urdf2inventor
+Description: Description of urdf2inventor
+Version: 1.0.2
+Cflags: -I${prefix}/include -I/usr/include -I/usr/include/qt4 -I/usr/include/qt4/Qt
+Libs: -L${prefix}/lib -lurdf2inventor -lSoQt -lQtOpenGL -lQtGui -lQtCore -lXmu -lXi -lCoin -lGL -lXext -lSM -lICE -lX11 -ldl -lpthread /usr/lib/x86_64-linux-gnu/libassimp.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: roscpp urdf eigen_conversions baselib_binding urdf_traverser urdf_transform

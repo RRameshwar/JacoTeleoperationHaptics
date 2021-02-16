@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: moveit_controller_multidof
+Description: Description of moveit_controller_multidof
+Version: 1.0.4
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/moveit-pkgs/moveit_controller_multidof/include
+Libs: -L${prefix}/lib -lmoveit_controller_multidof
+Requires: actionlib actionlib_msgs control_msgs geometry_msgs path_navigation_msgs moveit_core moveit_msgs pluginlib roscpp

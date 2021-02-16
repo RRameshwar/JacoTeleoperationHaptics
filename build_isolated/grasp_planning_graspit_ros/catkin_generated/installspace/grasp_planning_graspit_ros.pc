@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/install_isolated
+
+Name: grasp_planning_graspit_ros
+Description: Description of grasp_planning_graspit_ros
+Version: 1.2.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -leigengrasp_planner_client
+Requires: roscpp grasp_planning_graspit grasp_planning_graspit_msgs moveit_msgs

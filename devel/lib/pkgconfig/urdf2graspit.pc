@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: urdf2graspit
+Description: Description of urdf2graspit
+Version: 1.2.0
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/graspit-pkgs/urdf2graspit/include
+Libs: -L${prefix}/lib -lurdf2graspit
+Requires: roscpp urdf eigen_conversions baselib_binding urdf2inventor urdf_viewer

@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_66d8e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_66d8e.dir/build.make CMakeFiles/cmTC_66d8e.dir/build
+make[1]: Entering directory '/home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66d8e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_66d8e.dir/CheckSymbolExists.c.o   -c /home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_66d8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66d8e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_66d8e.dir/CheckSymbolExists.c.o  -o cmTC_66d8e 
+CMakeFiles/cmTC_66d8e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_66d8e.dir/build.make:97: recipe for target 'cmTC_66d8e' failed
+make[1]: *** [cmTC_66d8e] Error 1
+make[1]: Leaving directory '/home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_66d8e/fast' failed
+make: *** [cmTC_66d8e/fast] Error 2
+
+File /home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d833f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d833f.dir/build.make CMakeFiles/cmTC_d833f.dir/build
+make[1]: Entering directory '/home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d833f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d833f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d833f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d833f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d833f.dir/CheckFunctionExists.c.o  -o cmTC_d833f -lpthreads 
+/usr/bin/x86_64-linux-gnu-ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d833f.dir/build.make:97: recipe for target 'cmTC_d833f' failed
+make[1]: *** [cmTC_d833f] Error 1
+make[1]: Leaving directory '/home/rrameshwar/JacoTeleoperationHaptics/build_isolated/arm_components_name_manager/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d833f/fast' failed
+make: *** [cmTC_d833f/fast] Error 2
+
+

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rrameshwar/JacoTeleoperationHaptics/devel_isolated/gazebo_world_plugin_loader/setup.sh

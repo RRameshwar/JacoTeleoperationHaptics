@@ -1,0 +1,2 @@
+set(grasp_execution_msgs_MESSAGE_FILES "msg/GraspData.msg;msg/GraspAction.msg;msg/GraspActionGoal.msg;msg/GraspActionResult.msg;msg/GraspActionFeedback.msg;msg/GraspGoal.msg;msg/GraspResult.msg;msg/GraspFeedback.msg;msg/GraspControlAction.msg;msg/GraspControlActionGoal.msg;msg/GraspControlActionResult.msg;msg/GraspControlActionFeedback.msg;msg/GraspControlGoal.msg;msg/GraspControlResult.msg;msg/GraspControlFeedback.msg")
+set(grasp_execution_msgs_SERVICE_FILES "")

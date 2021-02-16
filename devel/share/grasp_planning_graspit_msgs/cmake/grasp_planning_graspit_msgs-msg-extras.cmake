@@ -1,0 +1,2 @@
+set(grasp_planning_graspit_msgs_MESSAGE_FILES "")
+set(grasp_planning_graspit_msgs_SERVICE_FILES "/home/rrameshwar/JacoTeleoperationHaptics/src/graspit-pkgs/grasp_planning_graspit_msgs/srv/LoadDatabaseModel.srv;/home/rrameshwar/JacoTeleoperationHaptics/src/graspit-pkgs/grasp_planning_graspit_msgs/srv/AddToDatabase.srv;/home/rrameshwar/JacoTeleoperationHaptics/src/graspit-pkgs/grasp_planning_graspit_msgs/srv/SaveWorld.srv")

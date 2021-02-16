@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/install_isolated
+
+Name: moveit_object_handling
+Description: Description of moveit_object_handling
+Version: 1.0.4
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lmoveit_grasped_object_handler -lmoveit_collision_matrix_manipulator
+Requires: geometry_msgs sensor_msgs moveit_msgs roscpp shape_msgs std_msgs eigen_conversions convenience_ros_functions

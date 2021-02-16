@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11  -shared -Wl,-soname,libindex_contact.so -o /home/rrameshwar/JacoTeleoperationHaptics/devel_isolated/jaco_description/lib/libindex_contact.so CMakeFiles/index_contact.dir/IndexContactPlugin.cc.o  -L/usr/lib/x86_64-linux-gnu/gazebo-9/plugins 

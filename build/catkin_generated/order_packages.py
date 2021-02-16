@@ -2,4 +2,4 @@
 source_root_dir = '/home/rrameshwar/JacoTeleoperationHaptics/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/rrameshwar/ProstheticHand/srl_ws/devel;/opt/ros/melodic'.split(';') if '/home/rrameshwar/ProstheticHand/srl_ws/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/home/rrameshwar/JacoTeleoperationHaptics/devel;/opt/ros/melodic'.split(';') if '/home/rrameshwar/JacoTeleoperationHaptics/devel;/opt/ros/melodic' != '' else []

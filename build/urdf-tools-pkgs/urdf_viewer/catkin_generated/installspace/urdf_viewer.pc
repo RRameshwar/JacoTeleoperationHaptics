@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/install
+
+Name: urdf_viewer
+Description: Description of urdf_viewer
+Version: 1.0.2
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lurdf_viewer
+Requires: roscpp urdf2inventor

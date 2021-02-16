@@ -1,0 +1,11 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/Qt3Support
+-I/usr/include/qt4/QtCore
+-DROS_BUILD_SHARED_LIBS=1
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT3_SUPPORT
+-DQT_3SUPPORT_LIB
+-DQT_CORE_LIB
+-o
+/home/rrameshwar/JacoTeleoperationHaptics/build_isolated/grasp_planning_graspit/include/grasp_planning_graspit/moc_EigenGraspPlanner.cxx
+/home/rrameshwar/JacoTeleoperationHaptics/src/graspit-pkgs/grasp_planning_graspit/include/grasp_planning_graspit/EigenGraspPlanner.h

@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: urdf_traverser
+Description: Description of urdf_traverser
+Version: 1.0.2
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/urdf-tools-pkgs/urdf_traverser/include
+Libs: -L${prefix}/lib -lurdf_traverser
+Requires: roscpp urdf eigen_conversions baselib_binding

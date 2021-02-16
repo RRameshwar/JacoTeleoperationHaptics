@@ -25,3 +25,30 @@
 [submodule "src/joint-control-pkgs"]
 	path = src/joint-control-pkgs
 	url = https://github.com/JenniferBuehler/joint-control-pkgs
+[submodule "src/general-message-pkgs"]
+	path = src/general-message-pkgs
+	url = https://github.com/JenniferBuehler/general-message-pkgs
+[submodule "src/gazebo-pkgs"]
+	path = src/gazebo-pkgs
+	url = https://github.com/JenniferBuehler/gazebo-pkgs
+[submodule "src/grasp-execution-pkgs"]
+	path = src/grasp-execution-pkgs
+	url = https://github.com/JenniferBuehler/grasp-execution-pkgs
+[submodule "src/moveit-pkgs"]
+	path = src/moveit-pkgs
+	url = https://github.com/JenniferBuehler/moveit-pkgs
+[submodule "src/graspit-pkgs"]
+	path = src/graspit-pkgs
+	url = https://github.com/JenniferBuehler/graspit-pkgs
+[submodule "src/graspit"]
+	path = src/graspit
+	url = https://github.com/graspit-simulator/graspit.git
+[submodule "src/urdf-tools-pkgs"]
+	path = src/urdf-tools-pkgs
+	url = https://github.com/JenniferBuehler/urdf-tools-pkgs.git
+[submodule "src/teleop_twist_keyboard"]
+	path = src/teleop_twist_keyboard
+	url = https://github.com/ros-teleop/teleop_twist_keyboard.git
+[submodule "src/orocos_kinematics_dynamics"]
+	path = src/orocos_kinematics_dynamics
+	url = https://github.com/orocos/orocos_kinematics_dynamics.git

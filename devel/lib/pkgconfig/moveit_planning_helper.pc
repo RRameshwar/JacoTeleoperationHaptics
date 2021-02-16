@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/devel
+
+Name: moveit_planning_helper
+Description: Description of moveit_planning_helper
+Version: 1.0.4
+Cflags: -I/home/rrameshwar/JacoTeleoperationHaptics/src/moveit-pkgs/moveit_planning_helper/include
+Libs: -L${prefix}/lib -lmoveit_planning_helper
+Requires: actionlib actionlib_msgs eigen_conversions moveit_ros_planning_interface roscpp tf trajectory_msgs convenience_ros_functions geometric_shapes shape_msgs

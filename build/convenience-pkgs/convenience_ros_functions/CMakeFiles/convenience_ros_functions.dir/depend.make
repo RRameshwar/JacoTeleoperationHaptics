@@ -53,6 +53,7 @@ convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/forwards.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/header.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/init.h
+convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/internal/condition_variable.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/macros.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/master.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/ROSFunctions.cpp.o: /opt/ros/melodic/include/ros/message.h
@@ -398,6 +399,7 @@ convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/forwards.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/header.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/init.h
+convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/internal/condition_variable.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/macros.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/master.h
 convenience-pkgs/convenience_ros_functions/CMakeFiles/convenience_ros_functions.dir/src/RobotInfo.cpp.o: /opt/ros/melodic/include/ros/message.h

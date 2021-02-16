@@ -66,19 +66,20 @@ public:
         pos.name.push_back("jaco_finger_joint_2");
         pos.name.push_back("jaco_finger_joint_4");
 
-        /*pos.position.push_back(-1.7299817256187797);
-        pos.position.push_back(-1.7326067624496215 + (3.1415/2));
-        pos.position.push_back(0.7036460166034555);
-        pos.position.push_back(-0.8174465286212945);
-        pos.position.push_back(1.5064013197669412);
-        pos.position.push_back(3.135943485311694);*/
+        pos.position.push_back(-1.44341);
+        pos.position.push_back(-0.300781);
+        pos.position.push_back(-0.41736);
+        pos.position.push_back(-2.77498);
+        pos.position.push_back(2.22774);
+        pos.position.push_back(-2.56573);
 
-        pos.position.push_back(-0.83 - (3.1415/4));
-        pos.position.push_back(0.0);
-        pos.position.push_back(-1.6);
-        pos.position.push_back(0.03 + (3.14/2));
-        pos.position.push_back(-3.14);
-        pos.position.push_back(-0.05);
+
+        // pos.position.push_back(-0.83 - (3.1415/4));
+        // pos.position.push_back(0.0);
+        // pos.position.push_back(-1.6);
+        // pos.position.push_back(0.03 + (3.14/2));
+        // pos.position.push_back(-3.14);
+        // pos.position.push_back(-0.05);
 
         pos.position.push_back(0);
         pos.position.push_back(0);
@@ -94,10 +95,10 @@ public:
         jointHomes.push_back(1.5064013197669412);
         jointHomes.push_back(3.135943485311694);*/
 
-        jointHomes.push_back(-0.83 - (3.1415/4));
+        jointHomes.push_back(-0.83 - (3.1415/4)); // -1.6154
         jointHomes.push_back(0.0);
         jointHomes.push_back(-1.6);
-        jointHomes.push_back(0.03 + (3.14/2));
+        jointHomes.push_back(0.03 + (3.14/2)); // 1.6
         jointHomes.push_back(-3.14);
         jointHomes.push_back(-0.05);
 
@@ -241,7 +242,7 @@ public:
 
 		float ans_joint2 = map(num, jointHomes[2], yrange, rangeJoint2);
 
-		pos.position[2]= ans_joint2;
+		//pos.position[2]= ans_joint2;
 	}
 
 	std::vector<float> forwardKinematics(float x1, float y1, float x2, float y2){
@@ -299,8 +300,8 @@ public:
 		float ans_joint0 = num;
 		float ans_joint1 = map((xrange[1] - x), jointHomes[1], xrange, rangeJoint1);
 
-		pos.position[0]=ans_joint0;
-		pos.position[1]=ans_joint1;
+		//pos.position[0]=ans_joint0;
+		//pos.position[1]=ans_joint1;
 	}
 
 	void FingersPosCallback(const geometry_msgs::Vector3& msg){
@@ -334,12 +335,12 @@ int main(int argc, char **argv)
   {
     ros::spinOnce();
 
-    //jc.joint_pub.publish(jc.pos);
+    jc.joint_pub.publish(jc.pos);
 
-    if (jc.IMUcalibrated /*and jc.fingerCalibrated*/){
-    	jc.joint_pub.publish(jc.pos);
-    	//std::cout << "publishing" << std::endl;
-    }
+    // if (jc.IMUcalibrated /*and jc.fingerCalibrated*/){
+    // 	jc.joint_pub.publish(jc.pos);
+    // 	//std::cout << "publishing" << std::endl;
+    // }
 
     loop_rate.sleep();
     ++count;

@@ -78,6 +78,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -123,17 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,6 +181,21 @@ thumb_contact: jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/thumb_contact.
 thumb_contact/fast:
 	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/thumb_contact.dir/build.make jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/thumb_contact.dir/build
 .PHONY : thumb_contact/fast
+
+# Convenience name for target.
+jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/rule:
+	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f CMakeFiles/Makefile2 jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/rule
+.PHONY : jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/rule
+
+# Convenience name for target.
+cube_contact: jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/rule
+
+.PHONY : cube_contact
+
+# fast build rule for target.
+cube_contact/fast:
+	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/build.make jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/build
+.PHONY : cube_contact/fast
 
 # Convenience name for target.
 jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/jaco_description_xacro_generated_to_devel_space_.dir/rule:
@@ -308,6 +323,33 @@ ThumbContactPlugin.cc.s:
 	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/thumb_contact.dir/build.make jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/thumb_contact.dir/ThumbContactPlugin.cc.s
 .PHONY : ThumbContactPlugin.cc.s
 
+cube_contact_plugin.o: cube_contact_plugin.cc.o
+
+.PHONY : cube_contact_plugin.o
+
+# target to build an object file
+cube_contact_plugin.cc.o:
+	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/build.make jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/cube_contact_plugin.cc.o
+.PHONY : cube_contact_plugin.cc.o
+
+cube_contact_plugin.i: cube_contact_plugin.cc.i
+
+.PHONY : cube_contact_plugin.i
+
+# target to preprocess a source file
+cube_contact_plugin.cc.i:
+	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/build.make jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/cube_contact_plugin.cc.i
+.PHONY : cube_contact_plugin.cc.i
+
+cube_contact_plugin.s: cube_contact_plugin.cc.s
+
+.PHONY : cube_contact_plugin.s
+
+# target to generate assembly for a file
+cube_contact_plugin.cc.s:
+	cd /home/rrameshwar/JacoTeleoperationHaptics/build && $(MAKE) -f jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/build.make jaco-arm-pkgs/jaco_arm/jaco_description/CMakeFiles/cube_contact.dir/cube_contact_plugin.cc.s
+.PHONY : cube_contact_plugin.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -316,15 +358,16 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... install/strip"
 	@echo "... thumb_contact"
+	@echo "... cube_contact"
 	@echo "... jaco_description_xacro_generated_to_devel_space_"
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... index_contact"
 	@echo "... middle_contact"
-	@echo "... edit_cache"
 	@echo "... IndexContactPlugin.o"
 	@echo "... IndexContactPlugin.i"
 	@echo "... IndexContactPlugin.s"
@@ -334,6 +377,9 @@ help:
 	@echo "... ThumbContactPlugin.o"
 	@echo "... ThumbContactPlugin.i"
 	@echo "... ThumbContactPlugin.s"
+	@echo "... cube_contact_plugin.o"
+	@echo "... cube_contact_plugin.i"
+	@echo "... cube_contact_plugin.s"
 .PHONY : help
 
 

@@ -1,0 +1,8 @@
+prefix=/home/rrameshwar/JacoTeleoperationHaptics/install
+
+Name: grasp_execution_jaco_tutorial
+Description: Description of grasp_execution_jaco_tutorial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: jaco_on_table jaco_joints moveit_object_handling grasp_execution roscpp

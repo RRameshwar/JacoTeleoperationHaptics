@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11  -shared -Wl,-soname,libcube_contact.so -o /home/rrameshwar/JacoTeleoperationHaptics/devel_isolated/jaco_description/lib/libcube_contact.so CMakeFiles/cube_contact.dir/cube_contact_plugin.cc.o  -L/usr/lib/x86_64-linux-gnu/gazebo-9/plugins 

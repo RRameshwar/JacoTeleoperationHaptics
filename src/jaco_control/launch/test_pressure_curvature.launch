@@ -1,0 +1,8 @@
+<launch>
+<node pkg="jaco_control" type="test_pressure_curvature.py" name="plotter" 
+output="screen"/>
+
+<node pkg="jaco_control" type="pressure_gradient.py" name="apply_pressure" 
+output="screen"/>
+
+</launch>

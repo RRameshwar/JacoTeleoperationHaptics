@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rrameshwar/JacoTeleoperationHaptics/devel_isolated/grasp_planning_graspit_msgs/setup.sh
